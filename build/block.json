@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "ultradevs/demo-block",
+	"version": "0.1.0",
+	"title": "Demo Block By ultraDevs",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Demo Block",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Info Box Title"
+		},
+		"content": {
+			"type": "string",
+			"default": "Info Box Content"
+		},
+		"image": {
+			"type": "string",
+			"default": ""
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"title": "#333",
+				"content": "#888"
+			}
+		}
+	},
+	"styles": [
+		{
+			"name": "info-box-style-1",
+			"label": "Info Box Style #1",
+			"isDefault": true
+		},
+		{
+			"name": "info-box-style-2",
+			"label": "Info Box Style #2"
+		}
+	],
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"textdomain": "demo-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
